@@ -40,10 +40,10 @@ const darkModeToggle = () => {
          if (logo) { 
                 if (theme === 'dark') {
                     logo.src = 'images/logoW.png';
-                    logo.alt = 'My Company Logo (Dark)';
+                    logo.alt = 'AmsterDen Logo(Dark)';
                 } else {
                     logo.src = 'images/logo.png';
-                    logo.alt = 'My Company Logo (Light)';
+                    logo.alt = 'AmsterDen Logo(Light)';
                 }
             }
 
