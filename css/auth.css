@@ -1,4 +1,5 @@
 /* css/auth.css */
+
 body {
   font-family: 'Roboto', sans-serif;
   display: flex;
@@ -10,14 +11,20 @@ body {
 }
 
 .auth-container {
-  background-color: var(--auth-container-bg);
-  color: var(--text-color);
+  /*background-color: var(--auth-container-bg);
+  color: var(--text-color);*/
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 0 15px var(--shadow-color);
   width: 100%;
   max-width: 400px;
   border: 1px solid var(--border-color);
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
 }
 
 .auth-container h1 {
@@ -25,28 +32,50 @@ body {
 }
 
 .form-control {
-    background-color: var(--input-bg);
-    color: var(--input-text);
-    border: 1px solid var(--input-border);
+  background: rgba(255, 255, 255, 0);
+  box-shadow: inset 0px 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.34);
 }
 
 .form-control:focus {
-    background-color: var(--input-bg);
-    color: var(--input-text);
-    border-color: #80bdff;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  background: rgba(255, 255, 255, 0);
+  box-shadow: inset 50px 20px 30px rgba(0, 0, 0, 0.13);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.34);
 }
 
 .error-message {
   font-size: 0.9em;
 }
+
 .success-message {
   font-size: 0.9em;
 }
 
 @media (max-width: 576px) {
   .auth-container {
-    margin: 20px;
     padding: 20px;
   }
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+
+}
+
+.logo-reg {
+  width: auto;
+  height: 512px;
+  z-index: -1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: opacity(0.4) blur(50px);
 }
