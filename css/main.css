@@ -11,13 +11,16 @@
   background-color: var(--nav-link-hover-bg);
   box-shadow: 0 8px 32px 0 var(--shadow-color);
   padding: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .nav-link {
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px;
   display: flex;
   justify-content: center;
+  
 }
 
 .nav-item {
@@ -25,6 +28,7 @@
   padding: 0px;
   display: flex;
   justify-content: center;
+  
 }
 
 .nav-item.active {
